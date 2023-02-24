@@ -56,7 +56,7 @@
 
 - [CN2 GIA](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#1cn2-gia)
 - [AS9929](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#2%E8%81%94%E9%80%9A-as9929a%E7%BD%91)
-- [AS4837](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#3%E8%81%94%E9%80%9A-as4837%E6%99%AE%E9%80%) 9A%E6%B0%91%E7%94%A8%E7%BD%91)
+- [AS4837](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#3%E8%81%94%E9%80%9A-as4837%E6%99%AE%E9%80%9A%E6%B0%91%E7%94%A8%E7%BD%91)
 - [Softbank Japan](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#4%E8%81%94%E9%80%9A-%E6%97%A5%E6%9C%AC%E8%BD% AF%E9%93%B6)
 - [CMI](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#5cmi)
 - transit + cloudflare + landing machine [can pull global]
@@ -94,7 +94,7 @@
 
 - Support shortcut start, after installation, shell input [**vasma**] to open the script, script execution path [**/etc/v2ray-agent/install.sh**]
 
-- Latest Version【Recommended
+- Latest Version[Recommended]
 
 ```
 wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/rynsm4rt/v2ray-agent-en/master/install.sh" && chmod 700 /root/install .sh && /root/install.sh
