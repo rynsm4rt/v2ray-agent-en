@@ -12,7 +12,7 @@
 - [ssh starter tutorial](https://www.v2ray-agent.com/2020-12-16-ssh%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B)
 
 - [TG Group](https://t.me/technologyshare), [TG Channel - Update Notice](https://t.me/v2rayAgentChannel), [Blog Address](https://www.v2ray-agent.com/)
-- **Please give a ⭐ support **
+- **Please give a ⭐ support**
 
 * * * *
 
@@ -34,7 +34,7 @@
 - Support for reading configuration files from different cores to each other
 - Support for VLESS/VMess/Trojan/hysteria protocols
 - Support Debian, Ubuntu, Centos system, support the mainstream cpu architecture.
-- Support any combination of installation, support multi-user management, support DNS streaming unlock, support adding multiple ports, [support any door forwarding traffic, can be used to unlock Netflix, Google human authentication, etc.](https://github.com/mack-a/v2ray-agent/blob/master/ documents/netflix/dokodemo-unblock_netflix.md)
+- Support any combination of installation, support multi-user management, support DNS streaming unlock, support adding multiple ports, [support any door forwarding traffic, can be used to unlock Netflix, Google human authentication, etc.](https://github.com/mack-a/v2ray-agent/blob/master/documents/netflix/dokodemo-unblock_netflix.md)
 - Support retaining tls certificate after uninstallation
 - Support IPv6, [IPv6 notes](https://github.com/mack-a/v2ray-agent/blob/master/documents/ipv6_help.md)
 - Support WARP shunting, IPv6 shunting, arbitrary gate shunting
@@ -57,7 +57,7 @@
 - [CN2 GIA](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#1cn2-gia)
 - [AS9929](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#2%E8%81%94%E9%80%9A-as9929a%E7%BD%91)
 - [AS4837](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#3%E8%81%94%E9%80%9A-as4837%E6%99%AE%E9%80%9A%E6%B0%91%E7%94%A8%E7%BD%91)
-- [Softbank Japan](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#4%E8%81%94%E9%80%9A-%E6%97%A5%E6%9C%AC%E8%BD% AF%E9%93%B6)
+- [Softbank Japan](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#4%E8%81%94%E9%80%9A-%E6%97%A5%E6%9C%AC%E8%BD%AF%E9%93%B6)
 - [CMI](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#5cmi)
 - transit + cloudflare + landing machine [can pull global]
 
