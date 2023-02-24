@@ -61,106 +61,53 @@
 - [CMI](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md#5cmi)
 - transit + cloudflare + landing machine [can pull global]
 
-## 注意事项
+## Caution
 
-- **修改Cloudflare->SSL/TLS->Overview->Full**
-- **Cloudflare ---> A记录解析的云朵必须为灰色【如非灰色，会影响到定时任务自动续签证书】**
-- **如用CDN又同时使用直连，关闭云朵+自选IP，自选IP参考上方的[Cloudflare 优化方案](https://github.com/mack-a/v2ray-agent/blob/master/documents/optimize_V2Ray.md)**
-- **使用纯净系统安装，如使用其他脚本安装过并且自己无法修改错误，请重新安装系统后再次尝试安装**
-- wget: command not found [**这里需要自己手动安装下wget**]
-  ，如未使用过Linux，[点击查看](https://github.com/mack-a/v2ray-agent/tree/master/documents/install_tools.md)安装教程
-- 不支持非root账户
-- **如发现Nginx相关问题，请卸载掉自编译的nginx或者重新安装系统**
-- **为了节约时间，反馈请带上详细截图或者按照模版规范，无截图或者不按照规范的issue会被直接关闭**
-- **不推荐GCP用户使用**
-- **不推荐使用Centos以及低版本的系统，如果Centos安装失败，请切换至Debian10重新尝试，脚本不再支持Centos6、Ubuntu 16.x**
-- **[如有使用不明白的地方请先查看脚本使用指南](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md)**
-- **Oracle Cloud有一个额外的防火墙，需要手动设置**
-- **Oracle Cloud仅支持Ubuntu**
-- **如果使用gRPC通过cloudflare转发,需要在cloudflare设置允许gRPC，路径：cloudflare Network->gRPC**
-- **gRPC目前处于测试阶段，可能对你使用的客户端不兼容，如不能使用请忽略**
+- **Modify Cloudflare->SSL/TLS->Overview->Full**
+- **Cloudflare ---> A record resolution of the cloud must be gray [if not gray, it will affect the automatic renewal of the certificate of the timed task]**
+- **If you use CDN and use direct connection at the same time, close the cloud + self-selected IP, self-selected IP reference above [Cloudflare optimization program](https://github.com/mack-a/v2ray-agent/blob/master/documents/optimize_V2Ray.md) **
+- **Install using pure system, if you have installed using other scripts and can't change the error yourself, please try again after reinstalling the system**
+- wget: command not found [** here you need to manually install wget yourself**]
+  If you have not used Linux before, [click to view](https://github.com/mack-a/v2ray-agent/tree/master/documents/install_tools.md) installation tutorial
+- Non-root accounts are not supported
+- **If you find Nginx-related problems, please uninstall the self-compiled nginx or reinstall the system**
+- **To save time, please bring a detailed screenshot or follow the template specification for feedback, issues without screenshots or not following the specification will be closed directly**
+- **Not recommended for GCP users**
+- **Centos and lower versions are not recommended, if Centos installation fails, please switch to Debian10 and try again, the script no longer supports Centos6, Ubuntu 16.x**
+- **[Please check the script usage guide first if you don't understand anything](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md)**
+- **Oracle Cloud has an additional firewall that needs to be set manually**
+- **Oracle Cloud only supports Ubuntu**
+- **If you use gRPC to forward through cloudflare, you need to set up cloudflare to allow gRPC, path: cloudflare Network->gRPC**
+- **gRPC is currently in beta, may not be compatible with the client you are using, if you can not use it, please ignore **
 
-## [脚本使用指南](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md)、[脚本目录](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md#5脚本目录)
+## [Script Usage Guide](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md), [Script Directory](https://github.com/mack-a/v2ray-agent) /blob/master/documents/how_to_use.md#5 scripts directory)
 
-## 捐赠
+## Donate
 
-[您可以使用我的AFF进行购买VPS捐赠-博客](https://www.v2ray-agent.com/%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%88%91%E7%9A%84AFF%E8%B4%AD%E4%B9%B0vps%E6%8D%90%E8%B5%A0)
+[You can use my AFF to buy VPS donations - blog](https://www.v2ray-agent.com/%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%88%91%E7%9A%84AFF%E8%B4%AD% E4%B9%B0vps%E6%8D%90%E8%B5%A0)
 
-[您可以使用我的AFF进行购买VPS捐赠-Github](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md)
+[You can use my AFF to buy VPS donations-Github](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md)
 
-[支持通过虚拟币向我捐赠](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation.md)
+[Support donating to me via virtual coins](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation.md)
 
-## 安装脚本
+## Installation Script
 
-- 支持快捷方式启动，安装完毕后，shell输入【**vasma**】即可打开脚本，脚本执行路径[**/etc/v2ray-agent/install.sh**]
+- Support shortcut start, after installation, shell input [**vasma**] to open the script, script execution path [**/etc/v2ray-agent/install.sh**]
 
-- Latest Version【推荐】
+- Latest Version【Recommended
 
 ```
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/rynsm4rt/v2ray-agent-en/master/install.sh" && chmod 700 /root/install .sh && /root/install.sh
 ```
 
-
-# 示例图
+# Example image
 
 <img src="https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/install/install.jpg" width=700>
 
-# 许可证
+# License
 
 [AGPL-3.0](https://github.com/mack-a/v2ray-agent/blob/master/LICENSE)
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/mack-a/v2ray-agent.svg)](https://starchart.cc/mack-a/v2ray-agent)
-
-## 注意事项
-
-- **修改Cloudflare->SSL/TLS->Overview->Full**
-- **Cloudflare ---> A记录解析的云朵必须为灰色【如非灰色，会影响到定时任务自动续签证书】**
-- **如用CDN又同时使用直连，关闭云朵+自选IP，自选IP参考上方的[Cloudflare 优化方案](https://github.com/mack-a/v2ray-agent/blob/master/documents/optimize_V2Ray.md)**
-- **使用纯净系统安装，如使用其他脚本安装过并且自己无法修改错误，请重新安装系统后再次尝试安装**
-- wget: command not found [**这里需要自己手动安装下wget**]
-  ，如未使用过Linux，[点击查看](https://github.com/mack-a/v2ray-agent/tree/master/documents/install_tools.md)安装教程
-- 不支持非root账户
-- **如发现Nginx相关问题，请卸载掉自编译的nginx或者重新安装系统**
-- **为了节约时间，反馈请带上详细截图或者按照模版规范，无截图或者不按照规范的issue会被直接关闭**
-- **不推荐GCP用户使用**
-- **不推荐使用Centos以及低版本的系统，如果Centos安装失败，请切换至Debian10重新尝试，脚本不再支持Centos6、Ubuntu 16.x**
-- **[如有使用不明白的地方请先查看脚本使用指南](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md)**
-- **Oracle Cloud有一个额外的防火墙，需要手动设置**
-- **Oracle Cloud仅支持Ubuntu**
-- **如果使用gRPC通过cloudflare转发,需要在cloudflare设置允许gRPC，路径：cloudflare Network->gRPC**
-- **gRPC目前处于测试阶段，可能对你使用的客户端不兼容，如不能使用请忽略**
-
-## [脚本使用指南](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md)、[脚本目录](https://github.com/mack-a/v2ray-agent/blob/master/documents/how_to_use.md#5脚本目录)
-
-## 捐赠
-
-[您可以使用我的AFF进行购买VPS捐赠-博客](https://www.v2ray-agent.com/%E6%82%A8%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%88%91%E7%9A%84AFF%E8%B4%AD%E4%B9%B0vps%E6%8D%90%E8%B5%A0)
-
-[您可以使用我的AFF进行购买VPS捐赠-Github](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation_aff.md)
-
-[支持通过虚拟币向我捐赠](https://github.com/mack-a/v2ray-agent/blob/master/documents/donation.md)
-
-## 安装脚本
-
-- 支持快捷方式启动，安装完毕后，shell输入【**vasma**】即可打开脚本，脚本执行路径[**/etc/v2ray-agent/install.sh**]
-
-- Latest Version【推荐】
-
-```
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
-```
-
-
-# 示例图
-
-<img src="https://raw.githubusercontent.com/mack-a/v2ray-agent/master/fodder/install/install.jpg" width=700>
-
-# 许可证
-
-[AGPL-3.0](https://github.com/mack-a/v2ray-agent/blob/master/LICENSE)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/mack-a/v2ray-agent.svg)](https://starchart.cc/mack-a/v2ray-agent)
+[! [Stargazers over time](https://starchart.cc/mack-a/v2ray-agent.svg)](https://starchart.cc/mack-a/v2ray-agent)
